@@ -1,243 +1,246 @@
 :root {
-    --logo-color:#4D5AE5;
-    --title-text-color: #2E2F42;
-    --main-text-color:#434455;
-    --third-text-color: #ffffff;
-    --background-grey-color:#2E2F42;
-    --background-light-color:#F4F4FD;
-    --btn-color:#4D5AE5;
-    --btn-hover-color:#404BBF;
-    
+  --logo-color: #4d5ae5;
+  --title-text-color: #2e2f42;
+  --main-text-color: #434455;
+  --third-text-color: #ffffff;
+  --background-grey-color: #2e2f42;
+  --background-light-color: #f4f4fd;
+  --btn-color: #4d5ae5;
+  --btn-hover-color: #404bbf;
 }
 
 /* _______________Сommon________________ */
 
 body {
-    font-family: "Roboto", sans-serif;
-    color:var(--main-text-color);
-    background-color: #FFFFFF;
-
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
 }
 
-.mein-text-style{
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    
+ul,
+ol {
+  padding: 0;
 }
 
-.title-tex-style{
-    color: var(--title-text-color);
-    
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    
+.mein-text-style {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
-.sub-titel-text-styles{
-    color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
+
+.title-tex-style {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
 }
-.link{
-    text-decoration: none;
+.sub-titel-text-styles {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.link {
+  text-decoration: none;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
+}
+.conteiner {
+  width: 1158px;
+  padding:0 15;
+  border: 2px solid blue;
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
- /* ___________________HEDER_________________ */
+/* ___________________HEDER_________________ */
 
 .logo {
-    color:var(--logo-color);
-    
-    font-family: 'Raleway',sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-            
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  color: var(--logo-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .logo-style {
-    color:var(--title-text-color);
+  color: var(--title-text-color);
 }
 
 .nav-link {
-    
-    font-family: 'Roboto' 'sans-serif';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
+  font-family: 'Roboto' 'sans-serif';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
-.nav-link:hover{
-    color:var(--btn-hover-color);
-    
+.nav-link:hover {
+  color: var(--btn-hover-color);
 }
 .nav-link:focus {
-    color:var(--btn-hover-color);
+  color: var(--btn-hover-color);
 }
 
-.concacts{
-    font-style: normal;
+.concacts {
+  font-style: normal;
 }
 
 .contacts-list {
-       
-    color: var(--second-text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .contacts-list:hover {
-    color:var(--btn-hover-color);
+  color: var(--btn-hover-color);
 }
-    
+
 .contacts-list:focus {
-    color:var(--btn-hover-color);
+  color: var(--btn-hover-color);
 }
- /* _______________HERO ______________*/
+/* _______________HERO ______________*/
 
 .hero-section {
-    width: 1440px;
-    height: 600px;
-    background-color:var(--background-grey-color);
+  background-color: var(--background-grey-color);
 }
 
 .hero-titel {
-    color: var(--third-text-color);
-   
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
+  color: var(--third-text-color);
+  width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-btn {
-    background-color: var(--btn-color);
-    color: var(--third-text-color);
-    
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    
-    border-radius: 4px;
-    border: 0px;
-   
-    cursor: pointer;
-    width: 169px;
-    height: 56px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}   
+  background-color: var(--btn-color);
+  color: var(--third-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  border: 0px;
+
+  cursor: pointer;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .hero-btn:hover {
-    background:var(--btn-hover-color);
-    color: var(--third-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
+  background: var(--btn-hover-color);
+  color: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-btn:focus {
-    background:var(--btn-hover-color);
-    color: var(--third-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
-    
+  background: var(--btn-hover-color);
+  color: var(--third-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
- /* _______________ Advantages_______________ */
+/* _______________ Advantages_______________ */
 
 /* _______________Our Works________________ */
 
 /* ______________Team-Section________________ */
-.team-section{
-    background-color: var(--background-light-color);
-    width: 1440px;
-   
+.team-section {
+  background-color: var(--background-light-color);
+  width: 1440px;
 }
 
-.card-item{
-    width: 264px;
-    height: 380px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 0px 0px 4px 4px;   
+.card-item {
+  width: 264px;
+  height: 380px;
+  background: #ffffff;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* _______________Footer________________ */
 
 .footer {
-    background-color: var(--background-grey-color);
-    width: 1440px;
-    height: 312px;
-} 
- 
-.footer-logo-style {
-    color:#F4F4FD;
+  background-color: var(--background-grey-color);
+  width: 1440px;
+  height: 312px;
 }
 
-.footer-text{
-    color: #F4F4FD;
+.footer-logo-style {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  color: #f4f4fd;
 }
 
 /* _______________Portfolio_________________ */
 
-
 .portfolio-btn {
-    background-color: var(--background-light-color);
-    color: var(--btn-color);
+  background-color: var(--background-light-color);
+  color: var(--btn-color);
 
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
-    height: 48px;
+  height: 48px;
 
-    border: 0px;
-    border-radius: 4px;
-          
-    cursor: pointer;
-    margin-bottom: 10px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 0px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-btn:hover {
-    background-color:var(--btn-hover-color);
-    color: var(--third-text-color);
+  background-color: var(--btn-hover-color);
+  color: var(--third-text-color);
 }
 
 .portfolio-btn:focus {
-    background-color: var(--btn-hover-color);
-    color: var(--third-text-color);
+  background-color: var(--btn-hover-color);
+  color: var(--third-text-color);
 }
-
-
-
-

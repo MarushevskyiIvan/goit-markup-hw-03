@@ -16,6 +16,7 @@ body {
   color: var(--main-text-color);
   background-color: #ffffff;
 }
+
 h1,
 h2,
 h3,
@@ -31,13 +32,15 @@ ol {
 ul,
 ol {
   padding: 0;
+  list-style: none;
 }
 
 .mein-text-style {
+  color: var(--main-text-color);
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
 }
 
 .title-tex-style {
@@ -46,28 +49,31 @@ ol {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+
   text-transform: capitalize;
   text-align: center;
 }
 .sub-titel-text-styles {
   color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .link {
   text-decoration: none;
 }
 
-.list {
-  list-style: none;
-}
-.conteiner {
+.container {
   width: 1158px;
-  padding:0 15;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 2px solid blue;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -82,6 +88,12 @@ ol {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /* ___________________HEDER_________________ */
 
 .logo {
@@ -91,9 +103,35 @@ ol {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-
   letter-spacing: 0.03em;
+
   text-transform: uppercase;
+  margin-right: 76px;
+}
+
+.head-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.contacts-item {
+  display: flex;
+  gap: 40px;
 }
 
 .logo-style {
@@ -101,12 +139,13 @@ ol {
 }
 
 .nav-link {
+  color: var(--title-text-color);
+
   font-family: 'Roboto' 'sans-serif';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
 }
 .nav-link:hover {
   color: var(--btn-hover-color);
@@ -117,10 +156,12 @@ ol {
 
 .concacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contacts-list {
   color: var(--second-text-color);
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -133,6 +174,7 @@ ol {
 .contacts-list:focus {
   color: var(--btn-hover-color);
 }
+
 /* _______________HERO ______________*/
 
 .hero-section {
@@ -141,11 +183,22 @@ ol {
 
 .hero-titel {
   color: var(--third-text-color);
+
   width: 496px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-container {
+  display: flex;
+  padding-top: 188px;
+  padding-bottom: 188px;
+
+  flex-direction: column;
 }
 
 .hero-btn {
@@ -164,6 +217,8 @@ ol {
   width: 169px;
   height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  margin: 48px auto 0 auto;
 }
 
 .hero-btn:hover {
@@ -180,21 +235,61 @@ ol {
 
 /* _______________ Advantages_______________ */
 
-/* _______________Our Works________________ */
-
-/* ______________Team-Section________________ */
-.team-section {
-  background-color: var(--background-light-color);
-  width: 1440px;
+.advantages-section {
+  margin-top: 129px;
+  margin-bottom: 111px;
 }
 
+.advant-list {
+  display: flex;
+}
+
+/* _______________Our Works________________ */
+.work-section {
+  margin: 0 156px 120px 156px;
+}
+
+.Work-title {
+  margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* ______________Team-Section________________ */
+
+.team-section {
+  background-color: var(--background-light-color);
+  padding: 120px 156px;
+}
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.card-list {
+  display: flex;
+  gap: 24px;
+}
 .card-item {
+  background: #ffffff;
+
+  overflow: hidden;
   width: 264px;
   height: 380px;
-  background: #ffffff;
+
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.card-item-text {
+  text-align: center;
+  margin: 32px 16px;
 }
 
 /* _______________Footer________________ */

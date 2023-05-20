@@ -72,7 +72,7 @@ ol {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid blue;
+
   margin: 0 auto;
 }
 
@@ -107,11 +107,12 @@ img {
 
   text-transform: uppercase;
   margin-right: 76px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .head-nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
+ 
 
   display: flex;
   align-items: center;
@@ -121,17 +122,21 @@ img {
 
 .nav-list {
   display: flex;
+  align-items: center;
+ 
 }
 
 .nav-item {
   display: flex;
   align-items: center;
   gap: 40px;
+  
 }
 
 .contacts-item {
   display: flex;
   gap: 40px;
+ 
 }
 
 .logo-style {
@@ -146,6 +151,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .nav-link:hover {
   color: var(--btn-hover-color);
@@ -153,6 +161,7 @@ img {
 .nav-link:focus {
   color: var(--btn-hover-color);
 }
+
 
 .concacts {
   font-style: normal;
@@ -165,6 +174,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .contacts-list:hover {
@@ -191,6 +203,7 @@ img {
   letter-spacing: 0.02em;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .hero-container {
@@ -236,17 +249,23 @@ img {
 /* _______________ Advantages_______________ */
 
 .advantages-section {
-  margin-top: 129px;
-  margin-bottom: 111px;
+  padding-top: 129px;
+  padding-bottom: 111px;
 }
 
 .advant-list {
   display: flex;
+  gap: 24px;
+}
+
+.advant-item {
+  width: 264px;
 }
 
 /* _______________Our Works________________ */
 .work-section {
-  margin: 0 156px 120px 156px;
+  padding-top: 0;
+  padding-bottom: 120px;
 }
 
 .Work-title {
@@ -264,6 +283,7 @@ img {
 
 .team-section {
   background-color: var(--background-light-color);
+
   padding: 120px 156px;
 }
 
@@ -275,10 +295,10 @@ img {
   display: flex;
   gap: 24px;
 }
+
 .card-item {
   background: #ffffff;
 
-  overflow: hidden;
   width: 264px;
   height: 380px;
 
@@ -296,8 +316,9 @@ img {
 
 .footer {
   background-color: var(--background-grey-color);
-  width: 1440px;
-  height: 312px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo-style {
@@ -306,6 +327,11 @@ img {
 
 .footer-text {
   color: #f4f4fd;
+  margin-top: 16px;
+}
+
+.footer-container {
+  width: 264px;
 }
 
 /* _______________Portfolio_________________ */
@@ -319,13 +345,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
 
-  height: 48px;
+  padding: 12px 24px;
 
   border: 0px;
   border-radius: 4px;
 
   cursor: pointer;
-  margin-bottom: 10px;
+
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -338,4 +364,38 @@ img {
 .portfolio-btn:focus {
   background-color: var(--btn-hover-color);
   color: var(--third-text-color);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.portfolio-item {
+  margin-right: 24px;
+  margin-bottom: 48px;
+  width: 360px;
+  height: 420px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.card-portfolio-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
 }

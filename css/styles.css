@@ -163,7 +163,7 @@ img {
 }
 
 
-.concacts {
+.contacts {
   font-style: normal;
   margin-left: auto;
 }
@@ -196,7 +196,7 @@ img {
 .hero-titel {
   color: var(--third-text-color);
 
-  width: 496px;
+  max-width: 496px;
 
   font-size: 56px;
   line-height: 1.07;
@@ -206,11 +206,13 @@ img {
   text-align: center;
 }
 
-.hero-container {
-  display: flex;
+.hero-section{
   padding-top: 188px;
   padding-bottom: 188px;
+}
 
+.hero-container {
+  display: flex;
   flex-direction: column;
 }
 
@@ -227,7 +229,7 @@ img {
   border: 0px;
 
   cursor: pointer;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -249,8 +251,8 @@ img {
 /* _______________ Advantages_______________ */
 
 .advantages-section {
-  padding-top: 129px;
-  padding-bottom: 111px;
+  padding: 120px 0;
+  
 }
 
 .advant-list {
@@ -268,7 +270,7 @@ img {
   padding-bottom: 120px;
 }
 
-.Work-title {
+.work-title {
   margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
@@ -284,7 +286,7 @@ img {
 .team-section {
   background-color: var(--background-light-color);
 
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .team-title {
@@ -309,7 +311,7 @@ img {
 
 .card-item-text {
   text-align: center;
-  margin: 32px 16px;
+  padding: 32px 16px;
 }
 
 /* _______________Footer________________ */
@@ -325,16 +327,27 @@ img {
   color: #f4f4fd;
 }
 
-.footer-text {
-  color: #f4f4fd;
+.footer-logo{
+  display: inline-block;
+
   margin-top: 16px;
 }
 
-.footer-container {
-  width: 264px;
+.footer-text {
+  color: #f4f4fd;
+  
+
+  max-width: 264px;
 }
 
+
+
 /* _______________Portfolio_________________ */
+
+.portfolio-section{
+  padding: 96px 0 120px;
+
+}
 
 .portfolio-btn {
   background-color: var(--background-light-color);
@@ -347,8 +360,9 @@ img {
 
   padding: 12px 24px;
 
-  border: 0px;
+  border: 1px solid #E7E9FC;
   border-radius: 4px;
+  
 
   cursor: pointer;
 
@@ -359,25 +373,26 @@ img {
 .portfolio-btn:hover {
   background-color: var(--btn-hover-color);
   color: var(--third-text-color);
+  border: 1px solid #E7E9FC;
 }
 
 .portfolio-btn:focus {
   background-color: var(--btn-hover-color);
   color: var(--third-text-color);
+  border: 1px solid #E7E9FC;
 }
 
 .btn-container {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-top: 96px;
   margin-bottom: 72px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 120px;
+  
 }
 
 .portfolio-item {

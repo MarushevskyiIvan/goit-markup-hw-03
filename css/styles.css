@@ -96,6 +96,10 @@ img {
 
 /* ___________________HEDER_________________ */
 
+.head{
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .logo {
   color: var(--logo-color);
 
@@ -112,12 +116,8 @@ img {
 }
 
 .head-nav {
- 
-
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-list {
@@ -279,7 +279,10 @@ img {
 .work-list {
   display: flex;
   gap: 24px;
+   
 }
+
+
 
 /* ______________Team-Section________________ */
 
@@ -329,14 +332,13 @@ img {
 
 .footer-logo{
   display: inline-block;
-
-  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .footer-text {
   color: #f4f4fd;
-  
-
   max-width: 264px;
 }
 
@@ -373,13 +375,13 @@ img {
 .portfolio-btn:hover {
   background-color: var(--btn-hover-color);
   color: var(--third-text-color);
-  border: 1px solid #E7E9FC;
+  border: 1px solid transparent;
 }
 
 .portfolio-btn:focus {
   background-color: var(--btn-hover-color);
   color: var(--third-text-color);
-  border: 1px solid #E7E9FC;
+  border: 1px solid transparent;
 }
 
 .btn-container {
@@ -392,12 +394,13 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
   
 }
 
 .portfolio-item {
   margin-right: 24px;
-  margin-bottom: 48px;
+ 
   width: 360px;
   height: 420px;
 }
@@ -407,9 +410,8 @@ img {
 }
 
 .card-portfolio-text {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
+ 
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
